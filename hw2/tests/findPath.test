@@ -1,0 +1,33 @@
+# findpath test
+
+# Create a graph
+CreateGraph g1
+
+# Add nodes
+CreateNode a 2
+CreateNode b 1
+CreateNode c 3
+CreateNode d 1
+CreateNode e 4
+
+AddNode g1 a
+AddNode g1 b
+AddNode g1 c
+AddNode g1 d
+AddNode g1 e
+
+# Add an edge
+AddEdge g1 a b
+AddEdge g1 a c
+AddEdge g1 b c
+AddEdge g1 b d
+AddEdge g1 c d
+AddEdge g1 c e
+AddEdge g1 d e
+
+FindPath g1 a -> e
+FindPath g1 b -> c
+FindPath g1 a b -> e
+FindPath g1 a  -> b c
+FindPath g1 a  -> c d
+FindPath g1 a b -> e d

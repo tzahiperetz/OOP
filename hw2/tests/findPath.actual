@@ -1,0 +1,33 @@
+# findpath test
+
+# Create a graph
+created graph g1
+
+# Add nodes
+created node a with cost 2
+created node b with cost 1
+created node c with cost 3
+created node d with cost 1
+created node e with cost 4
+
+added node a to g1
+added node b to g1
+added node c to g1
+added node d to g1
+added node e to g1
+
+# Add an edge
+added edge from a to b in g1
+added edge from a to c in g1
+added edge from b to c in g1
+added edge from b to d in g1
+added edge from c to d in g1
+added edge from c to e in g1
+added edge from d to e in g1
+
+shortest path in g1: a b d e
+shortest path in g1: b c
+shortest path in g1: b d e
+shortest path in g1: a b
+shortest path in g1: a b d
+shortest path in g1: b d

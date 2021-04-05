@@ -1,0 +1,8 @@
+# Create Nodes
+CreateNode n1 1
+CreateNode n2 2
+CreateNode n3 3
+CreateNode n4 4
+CreateNode n5 5
+CreateNode n6 6
+CreateNode n7 7

@@ -1,0 +1,41 @@
+# listNodes test
+
+# Create a graph
+CreateGraph g1
+CreateGraph g2
+
+# Add a pair of nodes
+CreateNode n1 1
+CreateNode n2 2
+CreateNode n3 3
+CreateNode n4 4
+CreateNode n5 5
+CreateNode n6 6
+
+AddNode g1 n1
+AddNode g1 n2
+AddNode g1 n3
+AddNode g1 n4
+AddNode g1 n5
+AddNode g1 n6
+AddNode g2 n1
+AddNode g2 n2
+
+# Add an edge
+AddEdge g1 n1 n2
+AddEdge g1 n1 n3
+AddEdge g1 n1 n4
+AddEdge g1 n1 n5
+AddEdge g1 n1 n6
+AddEdge g1 n2 n3
+AddEdge g1 n2 n4
+AddEdge g1 n2 n5
+AddEdge g1 n2 n6
+AddEdge g1 n4 n3
+AddEdge g1 n4 n2
+AddEdge g1 n4 n1
+AddEdge g1 n1 n2
+AddEdge g1 n2 n1
+
+ListNodes g1
+ListNodes g2

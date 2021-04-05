@@ -1,0 +1,41 @@
+# listNodes test
+
+# Create a graph
+created graph g1
+created graph g2
+
+# Add a pair of nodes
+created node n1 with cost 1
+created node n2 with cost 2
+created node n3 with cost 3
+created node n4 with cost 4
+created node n5 with cost 5
+created node n6 with cost 6
+
+added node n1 to g1
+added node n2 to g1
+added node n3 to g1
+added node n4 to g1
+added node n5 to g1
+added node n6 to g1
+added node n1 to g2
+added node n2 to g2
+
+# Add an edge
+added edge from n1 to n2 in g1
+added edge from n1 to n3 in g1
+added edge from n1 to n4 in g1
+added edge from n1 to n5 in g1
+added edge from n1 to n6 in g1
+added edge from n2 to n3 in g1
+added edge from n2 to n4 in g1
+added edge from n2 to n5 in g1
+added edge from n2 to n6 in g1
+added edge from n4 to n3 in g1
+added edge from n4 to n2 in g1
+added edge from n4 to n1 in g1
+failed to add edge
+added edge from n2 to n1 in g1
+
+g1 contains: n1 n2 n3 n4 n5 n6
+g2 contains: n1 n2

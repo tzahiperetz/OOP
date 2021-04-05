@@ -1,0 +1,10 @@
+# Sample Testing file
+
+# Create a graph
+CreateGraph graph1
+CreateGraph graph2
+CreateGraph graph3
+CreateGraph graph4
+CreateGraph graph5
+CreateGraph graph6
+CreateGraph graph7
